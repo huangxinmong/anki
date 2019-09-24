@@ -5,12 +5,11 @@ Anki
 1）如果需要稳定的编译版，
 请看https://apps.ankiweb.net.
 
-2）对非开发者想要尝试这套代码最容易的方式使用下面这个二进制包
+2）对非开发者，想要尝试这套代码最容易的方式是使用下面这个二进制包
 https://anki.tenderapp.com/discussions/beta-testing
 
-3）如果要运行这个源码，请仔细阅读README.development 文件
-
-4）如果你有兴趣贡献开发Anki 请在开始前阅读 README.contributing
+3）如果要运行这个源码，请先仔细阅读README.development 文件
+   如果你有兴趣贡献开发Anki 请先阅读 README.contributing
 
 
 
