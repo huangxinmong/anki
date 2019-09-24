@@ -9,6 +9,7 @@ Anki
 https://anki.tenderapp.com/discussions/beta-testing
 
 3）如果要运行这个源码，请先仔细阅读README.development 文件
+
    如果你有兴趣贡献开发Anki 请先阅读 README.contributing
 
 
