@@ -1,13 +1,35 @@
+对代码贡献者而言
+
+对代码贡献者来说，比例翻译，牌组，或插件。请查看
+
+http://ankisrs.net/docs/manual.html#contributing
+
+
+
+
+
+
 Contributing Code
 ==================
 
 For info on contributing things other than code, such as translations, decks
 and add-ons, please see http://ankisrs.net/docs/manual.html#contributing
 
+anki2.1 主要是为保持与Python 3 and Qt 5同步更新，
+anki2.0需要使用2.0插件和硬件。所以2.1文件格式没有重大变化
+
 The goal of Anki 2.1.x is to bring Anki up to date with Python 3 and Qt 5,
 while maintaining compatibility with Anki 2.0.x. Some users will be stuck on
 Anki 2.0 for a while due to unported add-ons or old hardware, so it's
 important that 2.1 doesn't make breaking changes to the file format.
+
+
+同时考虑到anki不是直接被移动端使用，为了保持anki导入更方便，重构代码很难被移动端跟踪到，
+因此重构限制次数
+
+在发布新包前，请检查下面增加能够被接受
+
+
 
 Also of consideration is that the Anki code is indirectly used by the mobile
 clients, which try their best to keep as close to the Anki code as possible so
@@ -18,7 +40,7 @@ limited to times when it is necessary to address an important issue.
 Before sending a pull request or a patch, please check the following to
 increase your chances of the changes being accepted.
 
-Primarily Bugfixes
+Primarily Bugfixes  主要是错误修正
 -------------------
 
 Small patches that fix a specific problem and don't affect other functionality
@@ -37,35 +59,35 @@ Examples of changes that are unlikely to be accepted:
 - Adding code that addresses niche issues - they are better handled in an
   add-on.
 
-Maintaining Style
+Maintaining Style  保持风格
 ------------------
 
 For consistency, changes should maintain the existing code style - camelCaps,
 <80 column lines, succinct variable names and so on.
 
-Tests Must Pass
+Tests Must Pass  测试必须通过
 ----------------
 
 Please check that tools/tests.sh passes all tests prior to submitting a
 change. If your change is not covered by existing tests, ideally you'll add a
 new test.
 
-Do One Thing
--------------
+Do One Thing  做一件事
+------------
 
 A patch or pull request should be the minimum necessary to address one issue.
 Please don't make a pull request for a bunch of unrelated changes, as they are
 difficult to review and will be rejected - split them up into separate
 requests instead.
 
-License
+License  许可证
 -------
 
 As mentioned in the LICENSE file, we are only able to accept non-trivial
 patches or pull requests from people who have sent us a private message
 indicating that they license their changes under the BSD license.
 
-Add-ons
+Add-ons 插件
 ========
 
 If you'd like to make more extensive changes, please consider writing an
